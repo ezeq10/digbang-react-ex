@@ -1,24 +1,15 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import { Header } from "./components/common/Header";
-import Home from "./pages/Home";
-import Credit from "./pages/Credit";
-import "./App.css";
-import "./style.css";
+import React from "react"
+import CreditSimulator from "./pages/CreditSimulator"
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/credit" element={<Credit />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </div>
+    <div className="app-container">
+      <main className="main">
+        <CreditSimulator />
+      </main>
     </div>
   );
 }
 
-export default App;
+export default App
