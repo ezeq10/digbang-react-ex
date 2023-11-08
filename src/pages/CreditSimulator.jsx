@@ -16,7 +16,7 @@ const CreditSimulator = () => {
   }, [totalAmount, term]);
 
   return (
-    <>
+    <div className="credit-simulator-container">
       <h1 className="title">Simulá tu crédito</h1>
       <CreditForm
         totalAmount={totalAmount}
@@ -28,15 +28,15 @@ const CreditSimulator = () => {
         <div className="box">Cuota fija por mes</div>
         <div className="box">$ {monthlyPayment}</div>
       </div>
-      <div className="container">
-        <div className="box">
-          <button>Obtené Crédito</button>
+      <div className="btn-container">
+        <div style={{ width: 340 }}>
+          <button className="green-btn">Obtené Crédito</button>
         </div>
-        <div className="box">
-          <button>Ver detalle de cuotas</button>
+        <div>
+          <button className="blue-btn">Ver detalle de cuotas</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
