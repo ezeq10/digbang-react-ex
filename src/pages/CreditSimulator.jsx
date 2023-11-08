@@ -2,26 +2,26 @@ import React, { useState, useEffect } from "react";
 import CreditForm from "../components/sections/credit/CreditForm";
 
 const CreditSimulator = () => {
-  const [amount, setAmount] = useState(0);
-  const [term, setTerm] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(5000);
+  const [term, setTerm] = useState(3);
   const [monthlyPayment, setMonthlyPayment] = useState(0);
+  const monthlyInterestRate = 0.05 / 12; // 5% annual interest rate
 
   useEffect(() => {
-    const monthlyInterestRate = 0.05 / 12; // 5% annual interest rate
     const numPayments = term;
-    const numerator = amount * monthlyInterestRate;
+    const numerator = totalAmount * monthlyInterestRate;
     const denominator = 1 - Math.pow(1 + monthlyInterestRate, -numPayments);
     const monthlyPayment = numerator / denominator;
     setMonthlyPayment(monthlyPayment.toFixed(2));
-  }, [amount, term]);
+  }, [totalAmount, term]);
 
   return (
     <>
       <h1 className="title">Simulá tu crédito</h1>
       <CreditForm
-        amount={amount}
+        totalAmount={totalAmount}
         term={term}
-        onAmountChange={setAmount}
+        onAmountChange={setTotalAmount}
         onTermChange={setTerm}
       />
       <div className="container">

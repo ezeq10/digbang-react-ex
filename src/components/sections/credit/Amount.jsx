@@ -6,7 +6,13 @@ import Slider from "./../../common/Slider";
 const Amount = ({ label, value, onChange, min, max, step }) => {
   return (
     <>
-      <CreditInput label={label} value={value} onChange={onChange} />
+      <CreditInput
+        label={label}
+        value={value}
+        onChange={onChange}
+        min={min}
+        max={max}
+      />
       <div className="container">
         <div className="box">
           <Slider
