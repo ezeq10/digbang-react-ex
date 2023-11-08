@@ -1,14 +1,26 @@
-import React from 'react'
-import { default as RCSlider } from 'rc-slider'
-import 'rc-slider/assets/index.css'
+import React from "react";
+import PropTypes from "prop-types";
+import { default as RCSlider } from "rc-slider";
+import "rc-slider/assets/index.css";
 
 const Slider = ({ value, onChange, min, max, step }) => {
   return (
-    <div>
-      <p>{value}</p>
-      <RCSlider min={min} max={max} step={step} value={value} onChange={onChange} />
-    </div>
-  )
-}
+    <RCSlider
+      min={min}
+      max={max}
+      step={step}
+      value={value}
+      onChange={onChange}
+    />
+  );
+};
 
-export default Slider
+Slider.propTypes = {
+  value: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
+  min: PropTypes.number.isRequired,
+  max: PropTypes.number.isRequired,
+  step: PropTypes.number.isRequired,
+};
+
+export default Slider;

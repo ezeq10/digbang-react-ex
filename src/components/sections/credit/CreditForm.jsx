@@ -1,6 +1,7 @@
-import React from "react"
-import Amount from './Amount'
-import Term from './Term'
+import React from "react";
+import PropTypes from "prop-types";
+import Amount from "./Amount";
+import Term from "./Term";
 
 const CreditForm = ({ amount, term, onAmountChange, onTermChange }) => {
   return (
@@ -21,16 +22,15 @@ const CreditForm = ({ amount, term, onAmountChange, onTermChange }) => {
         max={60}
         step={12}
       />
-      <div className="container">
-        <div className="box">
-          <button>Obtené Crédito</button>
-        </div>
-        <div className="box">
-          <button>Ver detalle de cuotas</button>
-        </div>
-      </div>
     </>
-  )
-}
+  );
+};
 
-export default CreditForm
+CreditForm.propTypes = {
+  amount: PropTypes.number.isRequired,
+  term: PropTypes.number.isRequired,
+  onAmountChange: PropTypes.func.isRequired,
+  onTermChange: PropTypes.func.isRequired,
+};
+
+export default CreditForm;
