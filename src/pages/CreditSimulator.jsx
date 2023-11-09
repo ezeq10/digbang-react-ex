@@ -17,16 +17,16 @@ const CreditSimulator = () => {
 
   return (
     <div className="credit-simulator-container">
-      <h1 className="title">Simulá tu crédito</h1>
+      <h2 style={{ fontSize: 32 }}>Simulá tu crédito</h2>
       <CreditForm
         totalAmount={totalAmount}
         term={term}
         onAmountChange={setTotalAmount}
         onTermChange={setTerm}
       />
-      <div className="container">
-        <div className="box">Cuota fija por mes</div>
-        <div className="box">$ {monthlyPayment}</div>
+      <div className="container monthly-payment-container">
+        <div className="box" style={{ fontSize: 18, fontWeight: 'bold', textTransform: 'uppercase' }}>Cuota fija por mes</div>
+        <div className="box" style={{ fontSize: 36, fontWeight: 'bold' }}>$ {monthlyPayment}</div>
       </div>
       <div className="btn-container">
         <div style={{ width: 340 }}>

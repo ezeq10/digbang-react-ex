@@ -43,6 +43,7 @@
 
 .app-container {
   display: flex;
+  height: 100%;
   justify-content: center;
   background-color: #084F85;
 }
@@ -69,6 +70,13 @@
 .credit-simulator-container {
   width: 568px;
   background-color: #003B66;
+  margin-top: 60px;
+}
+
+.monthly-payment-container {
+  height: 60px;
+  background-color: #00365D;
+  margin-top: 55px;
 }
 
 .btn-container {
@@ -79,17 +87,18 @@
 
 .green-btn {
   width: inherit;
+  height: 100%;
   background-color: #17AB8D;
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: inherit;
-  padding: 16px;
 }
 
 .blue-btn {
   width: inherit;
+  height: 100%;
   background-color: #0B548B;
   color: #FFFFFF;
   font-size: 16px;

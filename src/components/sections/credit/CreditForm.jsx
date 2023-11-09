@@ -5,7 +5,7 @@ import Term from "./Term";
 
 const CreditForm = ({ totalAmount, term, onTotalAmountChange, onTermChange }) => {
   return (
-    <>
+    <div style={{ marginTop: 55 }}>
       <Amount
         label="Monto total"
         value={totalAmount}
@@ -22,7 +22,7 @@ const CreditForm = ({ totalAmount, term, onTotalAmountChange, onTermChange }) =>
         max={24}
         step={1}
       />
-    </>
+    </div>
   );
 };
 

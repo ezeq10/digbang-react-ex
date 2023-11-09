@@ -1,26 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CreditInput from "./CreditInput";
-import Slider from "./../../common/Slider";
+import Slider from "./../../common/Slider/Slider";
 
 const Amount = ({ label, value, onChange, min, max, step }) => {
   return (
     <>
-      <CreditInput
-        label={label}
-        value={value}
-        onChange={onChange}
-        min={min}
-        max={max}
-      />
       <div className="container">
         <div className="box">
+          <label>{label}</label>
+        </div>
+        <div className="box">
+          <CreditInput value={value} onChange={onChange} min={min} max={max} />
+        </div>
+      </div>
+      <div className="container" style={{ justifyContent: "center" }}>
+        <div className="box" style={{ maxWidth: 356 }}>
           <Slider
             value={value}
             onChange={onChange}
             min={min}
             max={max}
             step={step}
+            markFormat={"$"}
           />
         </div>
       </div>
