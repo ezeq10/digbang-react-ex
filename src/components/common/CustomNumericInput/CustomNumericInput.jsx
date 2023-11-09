@@ -7,7 +7,7 @@ const CustomNumericInput = ({ value, onChange, prefix = null, min, max }) => {
     <div className={`custom-numeric-input-container ${prefix ? 'with-prefix' : ''}`}>
       {prefix && <span className="prefix">{prefix}</span>}
       <input
-        className={`custom-numeric-input ${prefix ? 'custom-numeric-input with-prefix-input' : ''}`}
+        className={`custom-numeric-input ${prefix ? 'with-prefix-input' : ''}`}
         type="number"
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}

@@ -1,18 +1,19 @@
 .custom-numeric-input-container {
   display: flex;
   width: inherit;
+  height: 34px;
 }
 
 .custom-numeric-input {
   width: inherit;
-  height: 34px;
   background-color: #003b66;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid #92abbd;
+  border: 2px solid #92abbd;
   text-align: center;
   outline: none;
+  padding-left: 16px;
 }
 
 .prefix {
@@ -23,8 +24,8 @@
   display: flex;
   align-items: center;
   user-select: none;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .with-prefix-input {

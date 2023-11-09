@@ -1,0 +1,91 @@
+.app-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  background: linear-gradient(#084f85, #003b67);
+}
+
+.main {
+  display: flex;
+  min-height: 560px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  flex: 1;
+  padding: 8px;
+  margin: 2px;
+}
+
+.credit-simulator-container {
+  width: 479px;
+  background-color: #003b66;
+  color: #ffffff;
+  margin-top: 60px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.label-box {
+  text-align: left;
+}
+
+.input-box {
+  width: 145px;
+  text-align: -webkit-right;
+}
+
+.input-label {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.monthly-payment-container {
+  height: 60px;
+  background-color: #00365d;
+  margin-top: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-container {
+  display: inline-flex;
+  height: 60px;
+  gap: 8px;
+}
+
+.green-btn {
+  width: inherit;
+  height: 100%;
+  background-color: #17ab8d;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: inherit;
+}
+
+.blue-btn {
+  width: inherit;
+  height: 100%;
+  background-color: #0b548b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: inherit;
+  padding: 4px;
+}

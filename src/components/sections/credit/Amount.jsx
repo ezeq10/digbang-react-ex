@@ -7,10 +7,10 @@ const Amount = ({ label, value, onChange, min, max, step }) => {
   return (
     <>
       <div className="container">
-        <div className="box">
-          <label>{label}</label>
+        <div className="box label-box">
+          <label className="input-label">{label}</label>
         </div>
-        <div className="box" style={{ width: 135 }}>
+        <div className="box input-box">
           <CustomNumericInput
             value={value}
             onChange={onChange}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import CreditForm from "../components/sections/credit/CreditForm";
+import CreditForm from "./CreditForm";
+import "./style.css";
 
 const CreditSimulator = () => {
   const [totalAmount, setTotalAmount] = useState(5000);
@@ -17,7 +18,7 @@ const CreditSimulator = () => {
 
   return (
     <div className="credit-simulator-container">
-      <h2 style={{ fontSize: 32 }}>Simulá tu crédito</h2>
+      <h2 className="title">Simulá tu crédito</h2>
       <CreditForm
         totalAmount={totalAmount}
         term={term}
@@ -25,14 +26,14 @@ const CreditSimulator = () => {
         onTermChange={setTerm}
       />
       <div className="container monthly-payment-container">
-        <div className="box" style={{ fontSize: 18, fontWeight: 'bold', textTransform: 'uppercase' }}>Cuota fija por mes</div>
-        <div className="box" style={{ fontSize: 36, fontWeight: 'bold' }}>$ {monthlyPayment}</div>
+        <div className="box">Cuota fija por mes</div>
+        <div className="box" style={{ fontSize: 36 }}>$ {monthlyPayment}</div>
       </div>
       <div className="container btn-container">
-        <div style={{ width: 320, height: 'inherit' }}>
+        <div style={{ width: 320, height: "inherit" }}>
           <button className="green-btn">Obtené Crédito</button>
         </div>
-        <div style={{ height: 'inherit' }}>
+        <div style={{ height: "inherit" }}>
           <button className="blue-btn">Ver detalle de cuotas</button>
         </div>
       </div>

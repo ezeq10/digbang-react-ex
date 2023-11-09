@@ -28,6 +28,7 @@ const CustomSlider = ({ value, onChange, min, max, step, useMarks, markFormat })
       value={value}
       onChange={onChange}
       marks={useMarks ? marks : undefined}
+      railStyle={{ color: '#FFFFFF', backgroundColor: '#FFFFFF', height: 5 }}
     />
   );
 };
