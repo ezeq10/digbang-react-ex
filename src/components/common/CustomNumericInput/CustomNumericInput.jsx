@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./style.css";
 
-const CreditInput = ({ value, onChange, prefix = null, min, max }) => {
+const CustomNumericInput = ({ value, onChange, prefix = null, min, max }) => {
   return (
-    <div className={`custom-number-input ${prefix ? 'with-prefix' : ''}`}>
+    <div className={`custom-numeric-input-container ${prefix ? 'with-prefix' : ''}`}>
       {prefix && <span className="prefix">{prefix}</span>}
       <input
-        className={`credit-input ${prefix ? 'credit-input with-prefix-input' : ''}`}
+        className={`custom-numeric-input ${prefix ? 'custom-numeric-input with-prefix-input' : ''}`}
         type="number"
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
@@ -18,7 +19,7 @@ const CreditInput = ({ value, onChange, prefix = null, min, max }) => {
   );
 };
 
-CreditInput.propTypes = {
+CustomNumericInput.propTypes = {
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired,
   prefix: PropTypes.string,
@@ -26,4 +27,4 @@ CreditInput.propTypes = {
   max: PropTypes.number.isRequired,
 };
 
-export default CreditInput;
+export default CustomNumericInput;

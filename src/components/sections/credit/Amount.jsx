@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CreditInput from "./CreditInput";
-import Slider from "./../../common/Slider/Slider";
+import CustomNumericInput from "../../common/CustomNumericInput";
+import CustomSlider from "../../common/CustomSlider";
 
 const Amount = ({ label, value, onChange, min, max, step }) => {
   return (
@@ -11,7 +11,7 @@ const Amount = ({ label, value, onChange, min, max, step }) => {
           <label>{label}</label>
         </div>
         <div className="box" style={{ width: 135 }}>
-          <CreditInput
+          <CustomNumericInput
             value={value}
             onChange={onChange}
             prefix="$"
@@ -22,7 +22,7 @@ const Amount = ({ label, value, onChange, min, max, step }) => {
       </div>
       <div className="container" style={{ justifyContent: "center" }}>
         <div className="box" style={{ maxWidth: 356 }}>
-          <Slider
+          <CustomSlider
             value={value}
             onChange={onChange}
             min={min}

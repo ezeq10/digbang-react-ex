@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { default as RCSlider } from "rc-slider";
 import "rc-slider/assets/index.css";
-import "./slider.css";
+import "./style.css";
 
-const Slider = ({ value, onChange, min, max, step, useMarks, markFormat }) => {
+const CustomSlider = ({ value, onChange, min, max, step, useMarks, markFormat }) => {
   const formatMarkLabel = (value) => {
     return markFormat ? `${markFormat}${value}` : value;
   };
@@ -32,7 +32,7 @@ const Slider = ({ value, onChange, min, max, step, useMarks, markFormat }) => {
   );
 };
 
-Slider.propTypes = {
+CustomSlider.propTypes = {
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired,
   min: PropTypes.number.isRequired,
@@ -42,9 +42,9 @@ Slider.propTypes = {
   markFormat: PropTypes.string,
 };
 
-Slider.defaultProps = {
+CustomSlider.defaultProps = {
   useMarks: true,
   markFormat: null,
 };
 
-export default Slider;
+export default CustomSlider;

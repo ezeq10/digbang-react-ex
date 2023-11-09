@@ -28,11 +28,11 @@ const CreditSimulator = () => {
         <div className="box" style={{ fontSize: 18, fontWeight: 'bold', textTransform: 'uppercase' }}>Cuota fija por mes</div>
         <div className="box" style={{ fontSize: 36, fontWeight: 'bold' }}>$ {monthlyPayment}</div>
       </div>
-      <div className="btn-container">
-        <div style={{ width: 340 }}>
+      <div className="container btn-container">
+        <div style={{ width: 320, height: 'inherit' }}>
           <button className="green-btn">Obtené Crédito</button>
         </div>
-        <div>
+        <div style={{ height: 'inherit' }}>
           <button className="blue-btn">Ver detalle de cuotas</button>
         </div>
       </div>

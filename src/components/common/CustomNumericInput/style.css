@@ -1,0 +1,40 @@
+.custom-numeric-input-container {
+  display: flex;
+  width: inherit;
+}
+
+.custom-numeric-input {
+  width: inherit;
+  height: 34px;
+  background-color: #003b66;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #92abbd;
+  text-align: center;
+  outline: none;
+}
+
+.prefix {
+  padding: 8px;
+  border: 1px solid #92abbd;
+  border-right: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.with-prefix-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #92abbd;
+  border-left: none; /* Remove left border when there's a prefix */
+}
+
+.with-prefix-input.with-prefix {
+  padding-left: 0; /* Adjust padding when there's a prefix */
+  text-align: right; /* Align the numeric value to the right */
+}

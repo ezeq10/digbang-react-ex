@@ -50,7 +50,6 @@
 
 .main {
   display: flex;
-  color: #FFFFFF;
   min-height: 560px;
 }
 
@@ -68,50 +67,12 @@
 }
 
 .credit-simulator-container {
-  width: 568px;
-  background-color: #003B66;
-  margin-top: 60px;
-}
-
-.credit-input {
-  width: inherit;
-  height: 34px;
+  width: 479px;
   background-color: #003B66;
   color: #FFFFFF;
-  font-size: 24px;
-  font-weight: bold;
-  border: 1px solid #92ABBD;
-  text-align: center;
-  outline: none;
-}
-
-.custom-number-input {
-  display: flex;
-  width: inherit;
-}
-
-.prefix {
-  padding: 8px;
-  border: 1px solid #92ABBD;
-  border-right: none;
-  background-color: inherit;
-  display: flex;
-  align-items: center;
-  user-select: none;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.with-prefix-input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #92ABBD;
-  border-left: none; /* Remove left border when there's a prefix */
-}
-
-.with-prefix-input.with-prefix {
-  padding-left: 0; /* Adjust padding when there's a prefix */
-  text-align: right; /* Align the numeric value to the right */
+  margin-top: 60px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .monthly-payment-container {
@@ -132,7 +93,7 @@
   background-color: #17AB8D;
   color: #FFFFFF;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   border-radius: inherit;
 }
@@ -142,8 +103,9 @@
   height: 100%;
   background-color: #0B548B;
   color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: bold;
   text-transform: uppercase;
   border-radius: inherit;
+  padding: 4px;
 }
