@@ -10,7 +10,7 @@ const Term = ({ label, value, onChange, min, max, step }) => {
         <div className="box">
           <label>{label}</label>
         </div>
-        <div className="box">
+        <div className="box" style={{ width: 135 }}>
           <CreditInput value={value} onChange={onChange} min={min} max={max} />
         </div>
       </div>

@@ -21,7 +21,7 @@ const CreditSimulator = () => {
       <CreditForm
         totalAmount={totalAmount}
         term={term}
-        onAmountChange={setTotalAmount}
+        onTotalAmountChange={setTotalAmount}
         onTermChange={setTerm}
       />
       <div className="container monthly-payment-container">
