@@ -67,19 +67,21 @@ const CreditSimulator = () => {
         onRequestClose={handleCloseSuccessModal}
         contentLabel="Success Modal"
       >
-        <h3>¡Crédito solicitado con éxito!</h3>
-        <button onClick={handleCloseSuccessModal}>Cerrar</button>
+        <div className="credit-simulator-modal-content">
+          <h3>¡Crédito solicitado con éxito!</h3>
+        </div>
       </CustomModal>
       <CustomModal
         isOpen={isDetailModalOpen}
         onRequestClose={handleCloseDetailsModal}
         contentLabel="Detail Modal"
       >
-        <h3>Detalle de las cuotas</h3>
-        <p>Monto total: {totalAmount}</p>
-        <p>Número de cuotas: {term}</p>
-        <p>Total por mes: {monthlyPayment}</p>
-        <button onClick={handleCloseDetailsModal}>Cerrar</button>
+        <div className="credit-simulator-modal-content">
+          <h3>Detalle de las cuotas</h3>
+          <p>Monto total: {totalAmount}</p>
+          <p>Número de cuotas: {term}</p>
+          <p>Total por mes: {monthlyPayment}</p>
+        </div>
       </CustomModal>
     </div>
   );

@@ -89,3 +89,8 @@
   border-radius: inherit;
   padding: 4px;
 }
+
+.credit-simulator-modal-content {
+  margin-top: 40px;
+  text-align: center;
+}
